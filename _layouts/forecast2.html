@@ -1,0 +1,48 @@
+---
+layout: default
+---
+{% include header.html active="Nipa" %}
+{% include base.html %}
+{% include fcst-nav.html active=page.active-tab %}
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="dropdown active"><a href="#" class="dropdown-toggle" id=prcpTab" data-toggle="dropdown" aria-controls="prcpTab-contents" aria-expanded="false">Precipitation <span class="caret"></span></a>
+       <ul class="dropdown-menu" aria-labelledby="prcpTab" id="prcpTab-contents">
+		<li class="active">
+		<a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1" aria-expanded="true">CONUS</a>
+       </li>
+		<li class>
+		<a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2" aria-expanded="false">Worldwide</a>
+       </li>
+      </ul> 
+		<li role="presentation" class="dropdown active"><a href="#" class="dropdown-toggle" id=tempTab" data-toggle="dropdown" aria-controls="tempTab-contents" aria-expanded="false">Temperature <span class="caret"></span></a>
+       <ul class="dropdown-menu" aria-labelledby="tempTab" id="tempTab-contents">
+		<li class>
+		<a href="#dropdown3" role="tab" id="dropdown3-tab" data-toggle="tab" aria-controls="dropdown3" aria-expanded="false">CONUS</a>
+       </li>
+		<li class>
+		<a href="#dropdown4" role="tab" id="dropdown4-tab" data-toggle="tab" aria-controls="dropdown4" aria-expanded="false">Worldwide</a>
+       </li>
+      </ul> 
+	  </ul>
+     </li>
+</ul>
+
+
+	  <!-- Tab panes -->
+      <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade active in" role="tabpanel" id="dropdown1" aria-labelledby="dropdown1-tab">
+          <p>
+    {% include image.html 
+    file="../../seasonal/most-recent-forecast/prcp/images/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-fcstanoms.png"
+    alt="Most Recent Seasonal Precipitation Forecast Anomalies" %} i</p>
+	</div>
+	  <div class="tab-pane fade" role="tabpanel" id="dropdown3" aria-labelledby="dropdown3-tab">
+          <p>
+    {% include image.html 
+    file="../../seasonal/most-recent-forecast/prcp/images/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-actualanoms.png"
+    alt="Most Recent Seasonal Precipitation Forecast Anomalies" %} i</p>
+	</div>
+</div>
+    </div>

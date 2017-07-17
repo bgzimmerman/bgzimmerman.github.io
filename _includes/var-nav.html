@@ -1,0 +1,10 @@
+{% include base.html %}
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" {% if {{include.active}} == "Precipitation" %}class="active"{% endif %}><a href="{{ base }}/seasonal/most-recent-forecast/main.html">Precipitation</a></li>
+          <li role="presentation"{% if {{include.active}} == "Temperature" %}class="active"{% endif %}><a href="{{ base }}/seasonal/most-recent-verification/main.html">Temperature</a></li>
+      </ul>
+	</div>
+  </div>
