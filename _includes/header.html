@@ -7,13 +7,13 @@
           <li {% if {{include.active}} == "Nipa" %} class="dropdown; active" {% else %} class="dropdown" {% endif %}>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NIPA Model<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Overview</a></li>
+                <li><a href="{{ base }}/nipa.html">Overview</a></li>
               <li><a href="https://github.com/bgzimmerman/monthlyNIPA">Download Model</a></li>
               <li role="separator" class="divider"></li>
               <li class="dropdown-header">Forecasts</li>
-              <li><a href="#">Subseasonal</a></li>
-              <li><a href="#">Monthly</a></li>
-              <li><a href="{{ base }}/seasonal/most-recent-forecast/prcp/world.html">Seasonal</a></li>
+              <li><a href="{{ base }}/subseasonal/most-recent-forecast/main.html">Subseasonal</a></li>
+              <li><a href="{{ base }}/monthly/most-recent-forecast/main.html">Monthly</a></li>
+              <li><a href="{{ base }}/seasonal/most-recent-forecast/main.html">Seasonal</a></li>
             </ul>
           </li>
           <li role="presentation"{% if {{include.active}} == 'Contact' %}class="active"{% endif %}><a href="{{ base }}/contact.html">Contact</a></li>
