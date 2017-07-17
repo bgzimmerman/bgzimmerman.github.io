@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">i
+  
+
+
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +13,17 @@
     <meta name="author" content="">
     <link rel="icon" href="./docs/favicon.ico">
 
-    <title>{{page.title}}</title>
+    <title>About</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="./assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="./dist/css/jumbotron.css" rel="stylesheet">
-    <link href="./dist/css/theme.css" rel="stylesheet">
-    <link href="./dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./assets/js/ie-emulation-modes-warning.js"></script>
@@ -34,31 +37,45 @@
 
   <body>
     <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation" class="active"><a href="#">NIPA Model</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">{{page.title}}</h3>
-      </div>
-        {{ content }}
-      <hr>
-      <footer>
-        <p>&copy; 2016 Company, Inc.</p>
-      </footer>
-    </div> <!-- /container -->
+        
+<div class="header clearfix">
+      <nav>
+      <ul class="nav nav-pills pull-right">
+          <li role="presentation" ><a href="/index.html">Home</a></li>
+          <li role="presentation" class="active"><a href="/about.html">About</a></li>
+          <li  class="dropdown" >
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NIPA Model<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Overview</a></li>
+              <li><a href="https://github.com/bgzimmerman/monthlyNIPA">Download Model</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Forecasts</li>
+              <li><a href="#">Subseasonal</a></li>
+              <li><a href="#">Monthly</a></li>
+              <li><a href="/seasonal/most-recent-forecast/prcp/world.html">Seasonal</a></li>
+            </ul>
+          </li>
+          <li role="presentation"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">About</h3>
+  </div>
 
+
+
+        <hr>
+<footer>
+  <p>&copy; 2016 Company, Inc.</p>
+</footer>
+
+    </div> <!-- /container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

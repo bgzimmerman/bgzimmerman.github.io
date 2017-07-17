@@ -1,15 +1,15 @@
 ---
-layout: forecast-main-page
-title: Seasonal Forecasts
+layout: default
 ---
+{% include header.html active="Nipa" %}
 <div class="container">
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-12">
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#">Most Recent Forecasts</a></li>
-        <li role="presentation"><a href="#">Most Recent Verifications</a></li>
-        <li role="presentation"><a href="#">Archive</a></li>
+          <li role="presentation" class="active"><a href="{{ base }}/seasonal/most-recent-forecast/main.html">Most Recent Forecasts</a></li>
+          <li role="presentation"><a href="{{ base }}/seasonal/most-recent-verification/prcp/world.html">Most Recent Verifications</a></li>
+          <li role="presentation"><a href="#">Archive</a></li>
       </ul>
 	</div>
     <div class="col-md-12">
@@ -27,15 +27,7 @@ title: Seasonal Forecasts
   </div>
   <div class="row">
     <div class="col-md-12">
-      <h4>Precipitation</h4>
-        <img src="./images/seasonal/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-fcstanoms.png" style="max-width: 100%; height: auto;" alt="Fcst Anoms"> 
+        {{ content }} 
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <h4>Temperature</h4>
-        <img src="./images/seasonal/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-actualanoms.png" style="max-width: 100%; height: auto;" alt="Fcst Anoms"> 
-   </div>
-  </div>
 </div>
-

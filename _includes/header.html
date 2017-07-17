@@ -1,0 +1,23 @@
+
+<div class="header clearfix">
+      <nav>
+      <ul class="nav nav-pills pull-right">
+          <li role="presentation" {% if {{include.active}} == "Index" %}class="active"{% endif %}><a href="{{ base }}/index.html">Home</a></li>
+          <li role="presentation" {% if {{include.active}} == "About" %}class="active"{% endif %}><a href="{{ base }}/about.html">About</a></li>
+          <li {% if {{include.active}} == "Nipa" %} class="dropdown; active" {% else %} class="dropdown" {% endif %}>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NIPA Model<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Overview</a></li>
+              <li><a href="https://github.com/bgzimmerman/monthlyNIPA">Download Model</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Forecasts</li>
+              <li><a href="#">Subseasonal</a></li>
+              <li><a href="#">Monthly</a></li>
+              <li><a href="{{ base }}/seasonal/most-recent-forecast/prcp/world.html">Seasonal</a></li>
+            </ul>
+          </li>
+          <li role="presentation"{% if {{include.active}} == 'Contact' %}class="active"{% endif %}><a href="{{ base }}/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">{{ page.title }}</h3>
+  </div>
