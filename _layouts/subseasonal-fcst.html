@@ -1,0 +1,21 @@
+---
+layout: archive 
+Title: Subseasonal Forecast Precipitation
+main-tab: Nipa
+active-tab: Archive 
+fcst-type: subseasonal
+---
+
+{% include var-nav.html active=page.active-var %}
+{% include prcp-archive-nav.html %}
+
+<div class="row">
+    <div class="col-md-6">
+        <h4 class="text-center">Week 3-4 {{ page.active-var }}</h4>
+        <img src="{{ base }}/images/subseasonal/archive/{{ page.fcst-var }}wk34_{{ page.issue-date }}.png" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+        <h4 class="text-center">Week 5-6 {{ page.active-var }}</h4>
+        <img src="{{ base }}/images/subseasonal/archive/{{ page.fcst-var }}wk56_{{ page.issue-date }}.png" class="img-responsive">
+    </div>
+</div>

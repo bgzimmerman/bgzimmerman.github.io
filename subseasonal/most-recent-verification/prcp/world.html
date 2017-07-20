@@ -1,0 +1,31 @@
+---
+layout: forecast 
+title: Seasonal Verification
+---
+{% include base.html %}
+<div class="row">
+    <div class="col-md-12">
+        <h4>Forecast</h4>
+    {% include image.html 
+    file="./images/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-fcstanoms.png"
+      alt="Most Recent Seasonal Precipitation Forecast Anomalies" %}
+    </div>
+    <div class="col-md-12">
+        <h4>Observed</h4>
+    {% include image.html 
+    file="./images/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-actualanoms.png"
+      alt="Most Recent Seasonal Precipitation Forecast Anomalies" %}
+    </div>
+    <div class="col-md-12">
+        <h4>Error</h4>
+    {% include image.html 
+    file="./images/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-fcstanoms.png"
+      alt="Most Recent Seasonal Precipitation Forecast Anomalies" %}
+    </div>
+    <div class="col-md-12">
+        <h4>Categorical Score</h4>
+    {% include image.html 
+    file="./images/ghcn-cams-prcp-20170301-20170528-300clusters-byphase-hits.png"
+      alt="Most Recent Seasonal Precipitation Forecast Anomalies" %}
+    </div>
+</div>
