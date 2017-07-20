@@ -1,10 +1,12 @@
 ---
-layout: archive
-title: Seasonal Forecast 
-active-tab: Archive 
+layout: archive 
+Title: Subseasonal Forecast Precipitation
 main-tab: Nipa
-fcst-type: seasonal
+active-var: Precipitation
+active-tab: Archive 
+fcst-type: subseasonal
+fcst-var: prcp
 ---
-{% include var-nav.html active=page.active-var %}
 
-This page holds the archive. Please click on one of the tabs above to access archived verifications.
+{% include var-nav.html active=page.active-var %}
+{% include prcp-archive-nav.html %}
